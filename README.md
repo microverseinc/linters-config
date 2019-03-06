@@ -1,5 +1,11 @@
 # linters-config
 
+## How to use this repo?
+
+Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions. Follow those instructions in order to set up Stickler in your repo.
+
+In order to get to know more about linters and Stickler, read the recap below.
+
 ## Linters
 
 Linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs (soruce: [Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))).
@@ -36,7 +42,3 @@ With Stickler enabled you can see:
 
 
 See more: https://stickler-ci.com/
-
-## How to use this repo?
-
-Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions. Follow those instructions in order to set up Stickler in your repo.
