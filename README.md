@@ -28,9 +28,11 @@ Stickler is an app, that can be integrated into Github repo. It uses multiple li
 With Stickler enabled you can see:
 
 - linting result in your PR
+![screenshot](./assets/images/result.png)
 - `Checks` tab in your PR
+![screenshot](./assets/images/checks.png)
 - comments under problematic line of code
-
+![screenshot](./assets/images/comment.png)
 
 
 See more: https://stickler-ci.com/
