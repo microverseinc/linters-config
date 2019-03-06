@@ -8,12 +8,12 @@ In order to get to know more about linters and Stickler, read the recap below.
 
 ## Linters
 
-Linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs (soruce: [Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))).
+Linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs (source: [Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))).
 
 There are a few reasons for using linters:
 
 1. Catching syntax errors is more efficient. There is no need to debug simple mistakes like typos - linter does it for you.
-2. Entire codebase looks like wrtten by one person.
+2. Entire codebase looks like written by one person.
 3. Programmers can focus on solving problems, instead of cleaning up the code.
 
 --------------
