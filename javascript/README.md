@@ -1,6 +1,19 @@
 # Ruby Course & React & Redux Course
 
-1. If you are not familiar with linters and Stickler, read [root level README](../README.md).
-2. Copy [.stickler.yml](./.stickler.yml) and [eslint.config](https://github.com/nidalaa/linters_config/blob/master/javascript/eslint.config) to the root directory of your repo.  **REMEMBER to do it on master branch**.
-2. Install stickler-ci https://github.com/apps/stickler-ci and enable it on your repo.
-3. Open your first pull request and take a look at `Checks` tab.
+
+If you are not familiar with linters and Stickler, read [root level README](../README.md).
+
+Please do the following **steps in this order**:
+
+1. Install stickler-ci https://github.com/apps/stickler-ci
+2. Enable stickler in your repo.
+3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml).
+    - **Remember** to use the copy linked above
+    - **Remember** that file names starts with a dot
+4. When you open your first pull request you should see Stickler's report at `Checks` tab.
+
+
+## Troubleshooting
+
+1. `while scanning for the next token found character '\t' that cannot start any token` error.
+Please make sure that you used spaces not tabs for indentation.
