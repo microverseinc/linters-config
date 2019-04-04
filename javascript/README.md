@@ -1,4 +1,4 @@
-# Ruby Course & React & Redux Course
+# Javascript & React & Redux Course
 
 
 If you are not familiar with linters and Stickler, read [root level README](../README.md).
