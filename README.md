@@ -1,6 +1,6 @@
 # linters-config
 
-## How to use this repo?
+## How to use this repo? 🤔
 
 Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions. Follow those instructions in order to set up Stickler in your repo.
 
