@@ -10,3 +10,6 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
+
+Style/Documentation:
+  Enabled: false
