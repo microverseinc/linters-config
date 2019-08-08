@@ -11,3 +11,4 @@ Metrics/MethodLength:
 # Exceptions for RSpec files.
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
+  
