@@ -5,16 +5,18 @@ Style/ClassAndModuleChildren:
   Exclude:
     - 'test/*'
 
+
 Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+    - 'app/controllers/*'
     - 'app/helpers/*'
     - 'app/mailers/*'
     - 'app/models/*'
-    - 'app/models/*'
     - 'config/*'
     - 'db/migrate/*'
+
 
 Style/MixinUsage:
   Exclude:
