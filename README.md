@@ -60,3 +60,9 @@ In that case check detailed instructions for each linter:
 - [css](./css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
 - [javascript](./ruby#troubleshooting)
+
+## Contributing
+
+Everybody is welcome to suggest changes in linters config files.
+
+In order to do it, fork this repository, create a new branch and open a Pull Request from your branch. A detailed description of this process: [A Step by Step Guide to Making Your First GitHub Contribution by Roshan Jossey](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940)
