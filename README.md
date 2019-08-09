@@ -2,7 +2,13 @@
 
 ## How to use this repo? 🤔
 
-Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions. Follow those instructions in order to set up Stickler in your repo.
+Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions:
+
+- [css](./css)
+- [ruby](./ruby)
+- [javascript](./ruby)
+
+Follow those instructions in order to set up Stickler in your repo.
 
 In order to get to know more about linters and Stickler read the recap below.
 
@@ -31,6 +37,8 @@ Also, there are many ways you can integrate a linter in your workflow:
 
 Stickler is an app, that can be integrated into any Github repo. It uses multiple linters that can be configured according to the programmer’s needs.
 
+🐛 **What to do if Stickler does not work?** Check [Troubleshooting](./#troubleshooting) below.
+
 With Stickler enabled you can see:
 
 - Linting result in your PR
@@ -42,3 +50,13 @@ With Stickler enabled you can see:
 
 
 See more: https://stickler-ci.com/
+
+## Troubleshooting
+
+If Stickler does not work in your repo, you can always use linters in your local environment.
+
+In that case check detailed instructions for each linter:
+
+- [css](./css#troubleshooting)
+- [ruby](./ruby#troubleshooting)
+- [javascript](./ruby#troubleshooting)
