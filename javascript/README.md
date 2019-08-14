@@ -22,3 +22,5 @@ Please do the following **steps in this order**:
     - run `npx eslint --init`
     - copy [eslint.config](./eslint.config) to the root directory of your project
     - run `npx eslint .`
+    - fix linter errors
+    - **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
