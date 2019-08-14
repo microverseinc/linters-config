@@ -21,3 +21,5 @@ Please do the following **steps in this order**:
     - run `bundle install`
     - copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
     - run `rubocop`
+    - fix linter errors
+    - **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
