@@ -20,3 +20,5 @@ Please do the following **steps in this order**:
     - run `npm install stylelint stylelint-config-recommended --save-dev`  (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
     - copy [stylelint.config.js](./stylelint.config.js) to the root directory of your project
     - run `npx stylelint .`
+    - fix linter errors
+    - **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
