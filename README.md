@@ -7,6 +7,7 @@ Each directory contains Stickler's config files specific to one programming lang
 - [css](./css)
 - [ruby](./ruby)
 - [javascript](./javascript)
+- [react&redux](./react-redux)
 
 Follow those instructions in order to set up Stickler in your repo.
 
