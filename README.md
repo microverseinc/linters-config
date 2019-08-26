@@ -6,7 +6,7 @@ Each directory contains Stickler's config files specific to one programming lang
 
 - [css](./css)
 - [ruby](./ruby)
-- [javascript](./ruby)
+- [javascript](./javascript)
 
 Follow those instructions in order to set up Stickler in your repo.
 
