@@ -39,7 +39,7 @@ Please do the following **steps in this order**:
 3. Check if someone else has had similar problem before [here](https://questions.microverse.org/c/linters-stickler).
     Please make sure that you used spaces not tabs for indentation.
 4. Stickler does not work and nothing helps 💥 - run `eslint` in your local env: 
-    - run `npx eslint --init` [Follow that Install eslint instruction ??] (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
+    - run `npx eslint --init` [Follow that Install eslint instruction :point_up:] (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
     - run `npx eslint .`
     - fix linter errors
     - **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
