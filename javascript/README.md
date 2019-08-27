@@ -9,7 +9,7 @@ Please do the following **steps in this order**:
    1. run `npx eslint --init`
    2. How would you like to use ESLint? Select `To check syntax, find problems, and enforce code style`
    3. Which framework does your project use? Select `None of this` (if that project is non-react project) or `React` (if that is a react-redux project)
-   4. Where does your code run? Select `Browser`
+   4. Where does your code run? Select `Browser` (If that app is a web based app or front-end) or `Node` (if that app is console based or back end)
    5. How would you like to define a style for your project? Select `Use a popular style guide`
    6. Which style guide do you want to follow? Select `Airbnb`
    7. What format do you want your config file to be in? Select `JavaScript`
