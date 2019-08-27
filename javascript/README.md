@@ -8,13 +8,16 @@ Please do the following **steps in this order**:
 1. Install eslint
    1. run `npx eslint --init`
    2. How would you like to use ESLint? Select `To check syntax, find problems, and enforce code style`
-   3. Which framework does your project use? Select `None of this` (if that project is non-react project) or `React` (if that is a react-redux project)
-   4. Where does your code run? Select `Browser` (If that app is a web based app or front-end) or `Node` (if that app is console based or back end)
-   5. How would you like to define a style for your project? Select `Use a popular style guide`
-   6. Which style guide do you want to follow? Select `Airbnb`
-   7. What format do you want your config file to be in? Select `JavaScript`
-   8. Would you like to install them now with npm? Select `Y` to install all the necessary packages for eslint.
-   9. After that it generate a `.eslintrc.js` file and with that we successfully installed eslint
+   3. What type of modules does your project use? Select `Javascript module(import/export)` { if your project has babel installed then you definitely need to choose this option. If you are working on a project such as React, Vue, Angular e.t.c they all use babel so you need choose this option.} or `CommonJS (require/exports)` {this option is meant for commonJS that has nothing to do with babel, maybe your nodejs project and any other javascript project} 
+   4. Which framework does your project use? Select `None of this` (if that project is non-react project) or `React` (if that is a react-redux project)
+   5. Where does your code run? Select `Browser` (If that app is a web based app or front-end) or `Node` (if that app is console based or back end)
+   6. How would you like to define a style for your project? Select `Use a popular style guide`
+   7. Which style guide do you want to follow? Select `Airbnb`
+   8. What format do you want your config file to be in? Select `JavaScript`
+   9.  Would you like to install them now with npm? Select `Y` to install all the necessary packages for eslint.
+   10. After that it generate a `.eslintrc.js` file and with that we successfully installed eslint
+   
+   [**Note:** [Here](https://dev.to/iamdammak/setting-up-eslint-in-your-javascript-project-with-vs-code-2amf) is a nice article about how to use eslint and setup in a project]
 
 2. Install stickler-ci https://github.com/apps/stickler-ci
 3. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
