@@ -7,6 +7,8 @@ Each directory contains Stickler's config files specific to one programming lang
 - [css](./css)
 - [ruby](./ruby)
 - [javascript](./javascript)
+- [react&redux](./react-redux)
+
 
 Follow those instructions in order to set up Stickler in your repo.
 
@@ -14,7 +16,7 @@ In order to get to know more about linters and Stickler read the recap below.
 
 ## Linters
 
-A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))).
+A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipedia](<https://en.wikipedia.org/wiki/Lint_(software)>)).
 
 There are a few reasons for using linters:
 
@@ -22,16 +24,15 @@ There are a few reasons for using linters:
 2. The entire codebase looks like written by one person.
 3. Programmers can focus on solving problems, instead of cleaning up the code.
 
---------------
+---
 
 You can find linters for most of the programming languages, e.g. Rubocop for Ruby or ESLint for JavaScript.
 
-
 Also, there are many ways you can integrate a linter in your workflow:
+
 - text editor plugin
 - git hook
 - Github app.
-
 
 ## Stickler
 
@@ -42,12 +43,11 @@ Stickler is an app, that can be integrated into any Github repo. It uses multipl
 With Stickler enabled you can see:
 
 - Linting result in your PR
-![screenshot](./assets/images/result.png)
+  ![screenshot](./assets/images/result.png)
 - `Checks` tab in your PR
-![screenshot](./assets/images/checks.png)
-- Comments under any problematic line of code 
-![screenshot](./assets/images/comment.png)
-
+  ![screenshot](./assets/images/checks.png)
+- Comments under any problematic line of code
+  ![screenshot](./assets/images/comment.png)
 
 See more: https://stickler-ci.com/
 

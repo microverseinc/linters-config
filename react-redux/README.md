@@ -1,4 +1,4 @@
-# Javascript
+# React and Redux
 
 If you are not familiar with linters and Stickler, read [root level README](../README.md).
 
