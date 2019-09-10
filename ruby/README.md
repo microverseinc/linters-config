@@ -6,7 +6,7 @@ Please do the following **steps in this order**:
 
 1. Install stickler-ci https://github.com/apps/stickler-ci
 2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
-3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.rubocop.yml](./.rubocop.yml) .
+3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.rubocop.yml](./.rubocop.yml)  to the root directory.
     - **Remember** to use both files linked above
     - **Remember** that `.stickler.yml` and `.rubocop.yml` file names start with a dot
 4. When you open your first pull request you should see Stickler's report at `Checks` tab.
