@@ -1,3 +1,20 @@
+# add the linters you want stickler to use for this project
 linters:
   stylelint:
+    # indicate where is the config file for stylelint
     config: 'stylelint.config.js'
+    # allow stylelint to use the fix feature 
+    fixer: true
+
+# add the files here you want to be ignored by stylelint
+# the lines below show that the file normalize.css will
+# be ignored during the checks
+files:
+    ignore:
+        - 'normalize.css'
+        
+# globally enable the fixers for this project        
+fixers:
+    enable: true
+    
+# find full documentation here: https://stickler-ci.com/docs
