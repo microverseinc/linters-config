@@ -25,7 +25,7 @@ Please do the following **steps in this order**:
    - Please make sure that you used spaces not tabs for indentation.
 3. Check if someone else has had similar problem before [here](https://questions.microverse.org/c/linters-stickler).
    Please make sure that you used spaces not tabs for indentation.
-4. Stickler does not work and nothing helps 💥 - run rubocop in your local env:
+4. Stickler does not work and nothing helps 💥 - run [eslint](https://eslint.org/) in your local env:
    - run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
    - run `npx eslint --init`
    - copy [eslint.config](./eslint.config) to the root directory of your project
