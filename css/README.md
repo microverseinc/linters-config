@@ -6,7 +6,7 @@ Please do the following **steps in this order**:
 
 1. Install stickler-ci https://github.com/apps/stickler-ci
 2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
-3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [stylelint.config.js](./stylelint.config.js).
+3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [stylelint.config.js](./stylelint.config.js) to the root directory.
     - **Remember** to use both files linked above
     - **Remember** that `.stickler.yml` file name starts with a dot
 4. When you open your first pull request you should see Stickler's report at `Checks` tab.
