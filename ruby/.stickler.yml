@@ -1,7 +1,9 @@
+# add the linters you want stickler to use for this project
 linters:
   rubocop:
     display_cop_names: true
     config: "./rubocop.yml"
+
 files:
   ignore:
     - "bin/*"
@@ -10,3 +12,4 @@ files:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+
