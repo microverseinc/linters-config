@@ -60,7 +60,7 @@ In that case check detailed instructions for each linter:
 
 - [css](./css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
-- [Ruby on Rails](./ror)
+- [Ruby on Rails](./ror#troubleshooting)
 - [javascript](./ruby#troubleshooting)
 - [react&redux](./react-redux#troubleshooting)
 
