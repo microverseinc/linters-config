@@ -2,7 +2,7 @@
 linters:
   eslint:
     # indicate where is the config file for stylelint
-    config: './eslint.config'
+    config: './.eslintrc.json'
 
 # add the files here you want to be ignored by stylelint
 files:
