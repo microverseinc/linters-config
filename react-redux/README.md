@@ -17,7 +17,7 @@ Please do the following **steps in this order**:
 2. run `npx eslint --init`
 3. make sure you select the following options when prompted
 
-![screenshot](../assets/images/eslint_config.png)
+![screenshot](../assets/images/eslint_config.PNG)
 
 4. copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
 5. double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on
