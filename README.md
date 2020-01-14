@@ -9,7 +9,6 @@ Each directory contains Stickler's config files specific to one programming lang
 - [javascript](./javascript)
 - [react&redux](./react-redux)
 
-
 Follow those instructions in order to set up Stickler in your repo.
 
 In order to get to know more about linters and Stickler read the recap below.
@@ -59,7 +58,7 @@ In that case check detailed instructions for each linter:
 
 - [css](./css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
-- [javascript](./ruby#troubleshooting)
+- [javascript](./javascript#troubleshooting)
 - [react&redux](./react-redux#troubleshooting)
 
 ## Contributing
