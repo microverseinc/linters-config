@@ -1,4 +1,4 @@
-# Ruby Course
+# Ruby on Rails Course
 
 If you are not familiar with linters and Stickler, read [root level README](../README.md).
 
@@ -9,20 +9,16 @@ Please do the following **steps in this order**:
 2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
 3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.rubocop.yml](./.rubocop.yml)  to the root directory.
     - **Remember** to use both files linked above
-    - **Remember** that `.stickler.yml` and `.rubocop.yml` file names start with a dot.
-4. **Do not make any changes in config files - they represnt style guidelines that you share with your tem - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. When you open your first pull request you should see Stickler's report at `Checks` tab.
+    - **Remember** that `.stickler.yml` and `.rubocop.yml` file names start with a dot
+4. When you open your first pull request you should see Stickler's report at `Checks` tab.
 
 ### Set-up Rubocop in your local env - it will help you to find style errors
-1. Add `gem 'rubocop'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
-2. Run `bundle install`.
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
-4. **Do not make any changes in config files - they represnt style guidelines that you share with your tem - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`.
-6. Fix linter errors.
-7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+1. add `gem 'rubocop'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html))
+2. run `bundle install`
+3. copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
+4. run `rubocop`
+5. fix linter errors
+6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
 
 ## Troubleshooting

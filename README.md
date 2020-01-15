@@ -2,17 +2,19 @@
 
 ## How to use this repo? 🤔
 
-Each directory contains Stickler's config files specific to one programming language and README file with detailed instructions:
+Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
 
+- [html](./html_validator) (validator not linter)
 - [css](./css)
 - [ruby](./ruby)
+- [ror](./ror)
 - [javascript](./javascript)
 - [react&redux](./react-redux)
 
-
-Follow those instructions in order to set up Stickler in your repo.
+Follow those instructions in order to set up linters or validators in your repo.
 
 In order to get to know more about linters and Stickler read the recap below.
+
 
 ## Linters
 
@@ -59,7 +61,8 @@ In that case check detailed instructions for each linter:
 
 - [css](./css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
-- [javascript](./ruby#troubleshooting)
+- [ror](./ror#troubleshooting)
+- [javascript](./javascript#troubleshooting)
 - [react&redux](./react-redux#troubleshooting)
 
 ## Contributing
