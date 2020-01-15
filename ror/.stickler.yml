@@ -14,6 +14,7 @@ files:
     - "Guardfile"
     - "Rakefile"
     - "README.md"
+    - "node_modules/**/*"
 
 # PLEASE DO NOT enable auto fixing options
 # if you need extra support from you linter - do it in your local env as described in README for this config
