@@ -10,7 +10,7 @@ Please do the following **steps in this order**:
 3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [eslint.config](./eslint.config) to the root directory.
    - **Remember** to use both files linked above
    - **Remember** that `.stickler.yml` file name starts with a dot.
-4. **Do not make any changes in config files - they represnt style guidelines that you share with your tem - which is a group of all Microverse students.**
+4. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. When you open your first pull request you should see Stickler's report at `Checks` tab.
 
@@ -22,7 +22,7 @@ Please do the following **steps in this order**:
 ![screenshot](../assets/images/eslint_config_javascript.PNG)
 
 4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
-5. **Do not make any changes in config files - they represents style guidelines that you share with your tem - which is a group of all Microverse students.**
+5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
 6. Run `npx eslint .`.
