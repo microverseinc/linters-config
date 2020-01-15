@@ -9,16 +9,20 @@ Please do the following **steps in this order**:
 2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
 3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [eslint.config](./eslint.config) to the root directory.
    - **Remember** to use both files linked above
-   - **Remember** that `.stickler.yml` file name starts with a dot
-4. When you open your first pull request you should see Stickler's report at `Checks` tab.
+   - **Remember** that `.stickler.yml` file name starts with a dot.
+4. **Do not make any changes in config files - they represnt style guidelines that you share with your tem - which is a group of all Microverse students.**
+    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
+5. When you open your first pull request you should see Stickler's report at `Checks` tab.
 
 ### Set-up ESlint in your local env - it will help you to find style errors
-1. run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
-2. run `npx eslint --init`
-3. copy [eslint.config](./eslint.config) to the root directory of your project
-4. run `npx eslint .`
-5. fix linter errors
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for ESlint](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+1. Run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+2. Run `npx eslint --init`.
+3. Copy [eslint.config](./eslint.config) to the root directory of your project.
+4. **Do not make any changes in config files - they represnt style guidelines that you share with your tem - which is a group of all Microverse students.**
+    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
+5. Run `npx eslint .`
+6. Fix linter errors.
+7. **IMPORTANT NOTE**: feel free to research [auto-correct options for ESlint](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
 ## Troubleshooting
 
