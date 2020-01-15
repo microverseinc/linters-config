@@ -6,6 +6,7 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "README.md"
+    - "node_modules/**/*"
 
   DisplayCopNames: true
 
