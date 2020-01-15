@@ -18,6 +18,7 @@ Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
 
+
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -31,8 +32,6 @@ Style/DefWithParentheses:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
-Layout/AlignHash:
-  EnforcedColonStyle: key
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
