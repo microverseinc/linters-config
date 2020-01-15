@@ -4,7 +4,7 @@
 
 Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
 
-- [html](./html) (validator not linter)
+- [html](./html_validator) (validator not linter)
 - [css](./css)
 - [ruby](./ruby)
 - [ror](./ror)
