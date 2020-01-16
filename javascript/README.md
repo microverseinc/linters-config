@@ -17,16 +17,37 @@ Please do the following **steps in this order**:
 ### Set-up ESlint in your local env - it will help you to find style errors
 1. Make sure you have `Nodejs` and `npm` installed locally on your computer by running `node -v` and `npm -v` on your terminal, you should see an output that looks like this: 
 
-![screenshot](../assets/images/npm-node.png)
+    `node -v v13.6.8`
 
-If you don't have Nodejs installed on your computer, here is a [great article on how to do it.](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/) 
+    `npm -v 6.13.4`
+
+    If you don't have Nodejs installed on your computer, here is a [great article on how to do it.](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/) (for ubuntu users). 
+    For Mac and Windows users visit [the official Nodejs website to download the installation files](nodejs.org).
+
+    Not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 2. Run `npx eslint --init`.
 3. Make sure you select the following options when prompted.
 
-![screenshot](../assets/images/eslint-config-js.png)
+    `? How would you like to use ESLint?` To check syntax, find problems, and enforce code style
 
-4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content, this will remove the globals ruleset, add a new envyroment and add some custom rules.
+    `? What type of modules does your project use?` JavaScript modules (import/export)
+
+    `? Which framework does your project use?`  None of these
+
+    `? Does your project use Typescript`  No
+
+    `? Where does your code run?`     Browser
+
+    `? How would you like to define a style for your project?` Use a popular style guide
+
+    `? Which style guide do you want to follow?`      Airbnb
+
+    `? What format do you want your config file to be in?`       JSON
+
+    `The config that you've selected requires the following dependencies: ? Would you like to install them now with npm?`       Yes
+
+4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content, this will remove the globals ruleset, add a new enviroment and add some custom rules.
 5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
