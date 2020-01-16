@@ -8,7 +8,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb"],
+  "extends": ["airbnb-base"],
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",

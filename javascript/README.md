@@ -7,21 +7,26 @@ Please do the following **steps in this order**:
 ### Set-up Stickler (Github app) - it will show that your app is free from style errors
 1. Install stickler-ci https://github.com/apps/stickler-ci
 2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
-3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [eslint.config](./eslint.config) to the root directory.
-   - **Remember** to use both files linked above
+3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml).
+   - **Remember** to use the file linked above
    - **Remember** that `.stickler.yml` file name starts with a dot.
-4. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. When you open your first pull request you should see Stickler's report at `Checks` tab.
+4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
+    - If you think that a change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
+5. When you first open a pull request you should see Stickler's report at `Checks` tab.
 
 ### Set-up ESlint in your local env - it will help you to find style errors
-1. Run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+1. Make sure you have `Nodejs` and `npm` installed locally on your computer by running `node -v` and `npm -v` on your terminal, you should see an output that looks like this: 
+
+![screenshot](../assets/images/npm-node.png)
+
+If you don't have Nodejs installed on your computer, here is a [great article on how to do it.](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/) 
+
 2. Run `npx eslint --init`.
 3. Make sure you select the following options when prompted.
 
-![screenshot](../assets/images/eslint_config_javascript.PNG)
+![screenshot](../assets/images/eslint-config-js.png)
 
-4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
+4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content, this will remove the globals ruleset, add a new envyroment and add some custom rules.
 5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
