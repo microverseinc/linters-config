@@ -10,7 +10,7 @@ Please do the following **steps in this order**:
 3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.rubocop.yml](./.rubocop.yml)  to the root directory.
     - **Remember** to use both files linked above
     - **Remember** that `.stickler.yml` and `.rubocop.yml` file names start with a dot.
-4. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. When you open your first pull request you should see Stickler's report at `Checks` tab.
 
@@ -18,7 +18,7 @@ Please do the following **steps in this order**:
 1. Add `gem 'rubocop'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html))
 2. Run `bundle install`
 3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project.
-4. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 5. Run `rubocop`
 6. Fix linter errors
