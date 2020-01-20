@@ -19,7 +19,23 @@ Please do the following **steps in this order**:
 2. Run `npx eslint --init`.
 3. Make sure you select the following options when prompted.
 
-![screenshot](../assets/images/eslint_config.PNG)
+    `? How would you like to use ESLint?` To check syntax, find problems, and enforce code style
+
+    `? What type of modules does your project use?` JavaScript modules (import/export)
+
+    `? Which framework does your project use?`  React
+
+    `? Does your project use Typescript`  No
+
+    `? Where does your code run?`     Browser
+
+    `? How would you like to define a style for your project?` Use a popular style guide
+
+    `? Which style guide do you want to follow?`      Airbnb
+
+    `? What format do you want your config file to be in?`       JSON
+
+    `The config that you've selected requires the following dependencies: ? Would you like to install them now with npm?`       Yes
 
 4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
 5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
