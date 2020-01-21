@@ -28,7 +28,7 @@ Please do the following **steps in this order**:
 
    - Not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)..
 
-   - Once you have everything setup and **BEFORE YOU MOVE TO THE NEXT STEP**, if you haven't run the following command from your terminal: `npm init -y`.
+   - Once you have everything setup and **BEFORE YOU MOVE TO THE NEXT STEP**, if you haven't, run the following command from your terminal: `npm init -y`.
 
 2) Run `npx eslint --init`.
 3) Make sure you select the following options when prompted.
