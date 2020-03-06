@@ -46,7 +46,7 @@ case $1 in
   config_files=(".stickler.yml" ".rubocop.yml")
   ;;
   javascript | react-redux)
-  config_files=(".stickler.yml" ".eslint.json")
+  config_files=(".stickler.yml" ".eslintrc.json")
   ;;
   *)
   echo "$usage"
