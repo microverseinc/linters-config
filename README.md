@@ -15,7 +15,6 @@ Follow those instructions in order to set up linters or validators in your repo.
 
 In order to get to know more about linters and Stickler read the recap below.
 
-
 ## Linters
 
 A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs(source: [Wikipedia](<https://en.wikipedia.org/wiki/Lint_(software)>)).
@@ -64,6 +63,12 @@ In that case check detailed instructions for each linter:
 - [ror](./ror#troubleshooting)
 - [javascript](./javascript#troubleshooting)
 - [react&redux](./react-redux#troubleshooting)
+
+## Validation
+
+Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
+
+TSEs will validate that you are using the same configuration files provided here. You can check if your linter configuration is correct using the [`check-linters-config`](scripts) script.
 
 ## Contributing
 
