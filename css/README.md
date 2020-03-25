@@ -26,7 +26,7 @@ Please do the following **steps in this order**:
 
 ## Troubleshooting
 
-1. All config files are in my repo bu Stickler does not work.
+1. All config files are in my repo but Stickler does not work.
     - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
     
     ![screenshot](../assets/images/stickler_app_config.png)
