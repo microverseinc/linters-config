@@ -5,7 +5,8 @@ AllCops:
     - "Rakefile"
 
   DisplayCopNames: true
-
+  DisabledByDefault: true
+  
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
@@ -39,3 +40,15 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
