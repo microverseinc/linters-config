@@ -1,6 +1,5 @@
 AllCops:
   Exclude:
-    - "README.md"
     - "Guardfile"
     - "Rakefile"
 
