@@ -30,32 +30,14 @@ Please do the following **steps in this order**:
 
    - Once you have everything setup and **BEFORE YOU MOVE TO THE NEXT STEP**, if you haven't, run the following command from your terminal: `npm init -y`.
 
-2) Run `npx eslint --init`.
-3) Make sure you select the following options when prompted.
+2. Install `eslint` together with its dependencies (for Microverse JavaScript projects) by issuing the following command: `npm i --save-dev eslint eslint-config-airbnb-base eslint-plugin-import`.
 
-   `? How would you like to use ESLint?` To check syntax, find problems, and enforce code style
+4) Copy the contents of [.eslintrc.json](./.eslintrc.json) to a file with the same name at the root of your project; this will remove the globals ruleset, add a new environment and add some custom rules.
 
-   `? What type of modules does your project use?` JavaScript modules (import/export)
-
-   `? Which framework does your project use?` None of these
-
-   `? Does your project use Typescript` No
-
-   `? Where does your code run?` Browser
-
-   `? How would you like to define a style for your project?` Use a popular style guide
-
-   `? Which style guide do you want to follow?` Airbnb
-
-   `? What format do you want your config file to be in?` JSON
-
-   `The config that you've selected requires the following dependencies: ? Would you like to install them now with npm?` Yes
-
-4) Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content, this will remove the globals ruleset, add a new enviroment and add some custom rules.
 5) **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 6) Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
-7) Run `npx eslint .`.
+7) Run `npx eslint` _`directoryWithYourJSFiles`_.
 8) Fix linter errors.
 9) **IMPORTANT NOTE**: feel free to research [auto-correct options for ESlint](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
