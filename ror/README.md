@@ -1,39 +1,60 @@
 # Ruby on Rails Course
 
-If you are not familiar with linters and Stickler, read [root level README](../README.md).
+If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+
+## Set-up GitHub Actions
+
+This GitHub Action is going to run [Rubocop](https://docs.rubocop.org/en/stable/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+
+[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+
+[Rubocop](https://docs.rubocop.org/en/stable/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
 
 Please do the following **steps in this order**:
 
-### Set-up Stickler (Github app) - it will show that your app is free from style errors
-1. Install stickler-ci https://github.com/apps/stickler-ci
-2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
-3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.rubocop.yml](./.rubocop.yml)  to the root directory.
-    - **Remember** to use both files linked above
-    - **Remember** that `.stickler.yml` and `.rubocop.yml` file names start with a dot.
-4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
+1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
+    - **Remember** to use the file linked above
+    - **Remember** that `.github` folder starts with a dot.
+2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. When you open your first pull request you should see Stickler's report at `Checks` tab.
+3. When you open your first pull request you should see the result of the GitHub Actions:
 
-### Set-up Rubocop in your local env - it will help you to find style errors
-1. Add `gem 'rubocop'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html))
-2. Run `bundle install`
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project.
+![gh actions checks](../assets/images/gh-actions-rubocop-stylelint-checks.png)
+
+Click on the `Details` link to see the full output and the errors that need to be fixed:
+
+![gh actions failing checks](../assets/images/gh-actions-rubocop-failing-checks.png)
+
+## Set-up linters in your local env
+
+### Rubocop
+
+1. Add `gem 'rubocop', '~>0.81.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
+2. Run `bundle install`.
+3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
 4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`
-6. Fix linter errors
+5. Run `rubocop`.
+6. Fix linter errors.
 7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
+### Stylelint
 
-## Troubleshooting
+1. Run `npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x`  (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
+3. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
+4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory.
+5. Fix linter errors.
+6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
-1. All config files are in my repo bu Stickler does not work.
-    - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
-    
-    ![screenshot](../assets/images/stickler_app_config.png)
+## RSpec/Heroku Actions
 
-    - Try to add a new commit to your Pull Request. Stickler should detect changes in your repo and start checking your code.
-2. `while scanning for the next token found character '\t' that cannot start any token` error.
-    - Please make sure that you used spaces not tabs for indentation.
-3. Check if someone else has had similar problem before [here](https://questions.microverse.org/c/linters-stickler).
-4. Stickler does not work and nothing helps 💥 - run rubocop in your local env and correct all errors. **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
+Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+
+Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+
+- [GitHub Actions with Ruby on Rails: Setting up Continuous Integration](https://gorails.com/episodes/github-actions-continuous-integration-ruby-on-rails)
+- [Deploying to Heroku from GitHub Actions](https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej)
+- [Building a Rails CI pipeline with GitHub Actions](https://boringrails.com/articles/building-a-rails-ci-pipeline-with-github-actions/)
+- [Github Actions to run Rubocop and RSpec tests on Rails with Postgres](https://dev.to/abdellani/github-actions-to-run-rubocop-and-rspec-tests-on-rails-with-postgres-47i)
