@@ -17,7 +17,7 @@ jobs:
       - name: Setup ESLint
         run: |
           npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x
-          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/gh-actions/javascript/javascript/.eslintrc.json
+          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.eslintrc.json
       - name: ESLint Report
         run: npx eslint .
   stylelint:
@@ -31,6 +31,6 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/gh-actions/javascript/javascript/.stylelintrc.json
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"

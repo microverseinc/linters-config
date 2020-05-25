@@ -29,7 +29,7 @@ jobs:
       - name: Setup Webhint 
         run: |
           npm install --save-dev hint@6.0.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/gh-actions/html-css/html-css/.hintrc
+          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
       - name: Webhint Report
         run: npx hint --telemetry=off .
   stylelint:
@@ -43,6 +43,6 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/gh-actions/html-css/html-css/.stylelintrc.json
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
