@@ -54,9 +54,17 @@ See more: https://stickler-ci.com/
 
 ## Troubleshooting
 
-If Stickler does not work in your repo, you can always use linters in your local environment.
+Depending on the configuration of your GitHub credentials, you may have an error like this when trying to create a new GitHub Actions workflow:
 
-In that case check detailed instructions for each linter:
+```
+! [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/file.yml` without `workflow` scope)
+
+```
+
+The problem is that you may be using a credentials app like [Credential Manager in Windows](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451) or OSX Keychain. In that case, you should [setup a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and configure it in your credentials app. Make sure to check the `workflow` permissions whne you setup your personal access token.
+
+
+If you had a different problem related to a specific tool, please check detailed instructions for each linter:
 
 - [css](./css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
