@@ -27,6 +27,13 @@ Click on the `Details` link to see the full output and the errors that need to b
 
 ## Set-up linters in your local env
 
+**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+
+```
+# .gitignore
+node_modules/
+```
+
 ### ESLint
 
 1. Run `npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).

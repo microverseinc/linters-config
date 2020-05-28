@@ -21,6 +21,13 @@ Click on the `Details` link of each action to see the full output and the errors
 
 ## Set-up linters in your local env
 
+**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+
+```
+# .gitignore
+node_modules/
+```
+
 ### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
 An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more.

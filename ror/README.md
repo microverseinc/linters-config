@@ -27,6 +27,13 @@ Click on the `Details` link to see the full output and the errors that need to b
 
 ## Set-up linters in your local env
 
+**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+
+```
+# .gitignore
+node_modules/
+```
+
 ### Rubocop
 
 1. Add `gem 'rubocop', '~>0.81.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
