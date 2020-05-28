@@ -4,8 +4,7 @@
 
 Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
 
-- [html](./html_validator) (validator not linter)
-- [css](./css)
+- [html&css](./html-css)
 - [ruby](./ruby)
 - [ror](./ror)
 - [javascript](./javascript)
@@ -13,7 +12,7 @@ Each directory listed below contains config files specific to one programming la
 
 Follow those instructions in order to set up linters or validators in your repo.
 
-In order to get to know more about linters and Stickler read the recap below.
+In order to get to know more about linters and GitHub Actions read the recap below.
 
 ## Linters
 
@@ -32,25 +31,16 @@ You can find linters for most of the programming languages, e.g. Rubocop for Rub
 Also, there are many ways you can integrate a linter in your workflow:
 
 - text editor plugin
-- git hook
-- Github app.
+- GitHub Actions
+- GitHub apps
 
-## Stickler
+## GitHub Actions
 
-Stickler is an app, that can be integrated into any Github repo. It uses multiple linters that can be configured according to the programmer’s needs.
+[Github Actions](https://help.github.com/en/actions) is a [CI/CD](https://codilime.com/what-is-ci-cd-all-you-need-to-know/) service offered by GitHub. It allows you to automate your workflow by letting GitHub take care of a number of tasks which can be triggered by [different of events](https://help.github.com/en/actions/reference/events-that-trigger-workflows) on the platform.
 
-🐛 **What to do if Stickler does not work?** Check [Troubleshooting](./#troubleshooting) below.
+🐛 **What to do if GitHub Actions does not work?** Check [Troubleshooting](./#troubleshooting) below.
 
-With Stickler enabled you can see:
-
-- Linting result in your PR
-  ![screenshot](./assets/images/result.png)
-- `Checks` tab in your PR
-  ![screenshot](./assets/images/checks.png)
-- Comments under any problematic line of code
-  ![screenshot](./assets/images/comment.png)
-
-See more: https://stickler-ci.com/
+You can automate tasks by creating **workflows** in your GitHub repository. GitHub will look for [YAML](https://en.wikipedia.org/wiki/YAML) files inside of the `.github/workflows` directory.
 
 ## Troubleshooting
 
@@ -62,7 +52,6 @@ Depending on the configuration of your GitHub credentials, you may have an error
 ```
 
 The problem is that you may be using a credentials app like [Credential Manager in Windows](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451) or OSX Keychain. In that case, you should [setup a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and configure it in your credentials app. Make sure to check the `workflow` permissions whne you setup your personal access token.
-
 
 If you had a different problem related to a specific tool, please check detailed instructions for each linter:
 
