@@ -1,5 +1,7 @@
 # linters-config
 
+This is the **GitHub Actions configuration**. If you are looking for the **Stickler configuration**, you can find it [here](https://github.com/microverseinc/linters-config/tree/Stickler).
+
 ## How to use this repo? 🤔
 
 Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
