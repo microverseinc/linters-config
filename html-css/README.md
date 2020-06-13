@@ -8,13 +8,7 @@ If you are not familiar with linters, read [root level README](../README.md).
 
 Please do the following **steps in this order**:
 
-1. In the first commit of your feature branch create a `.github/workflows`
-folder and add a copy of
-[this file](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.github/workflows/linters_css.yml)
-to that folder; name this file `linters.yml`. **Attention**, if you already
-completed the Sass lessons (CSS preprocessors) then you can use
-[this file](https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.github/workflows/linters_sass.yml)
-instead to lint only your Sass files.
+1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
     - **Remember** to use the file linked above
     - **Remember** that `.github` folder starts with a dot.
 2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
