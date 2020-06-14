@@ -73,7 +73,7 @@ A mighty, modern linter that helps you avoid errors and enforce conventions in y
 If you completed the Sass lessons you may prefer to work with SCSS files, if that's the case you need to perform
 a few modifications to the linter configuration files.
 
-1. In the file `.github/workflows/linters.yml` line 48 replace `"**/*.{css,scss}"` with `"**/*.scss"`
+1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
 2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
 
 Once you've done the previous steps you can focus on your SCSS files and not in fixing the generated CSS output
