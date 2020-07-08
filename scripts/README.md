@@ -22,7 +22,6 @@ Run the command `check-linters-config` on the root of the repository you want to
 
 ```
 $ check-linters-config ruby
-Files master/ruby/.stickler.yml and .stickler.yml differ
 Files master/ruby/.rubocop.yml and .rubocop.yml are identical
 ```
 
