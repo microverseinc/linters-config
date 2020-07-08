@@ -27,7 +27,7 @@ Files master/ruby/.rubocop.yml and .rubocop.yml are identical
 
 The possible directories/options included are:
 
-- [css](https://github.com/microverseinc/linters-config/tree/master/css)
+- [html-css](https://github.com/microverseinc/linters-config/tree/master/html-css)
 - [javascript](https://github.com/microverseinc/linters-config/tree/master/javascript)
 - [react-redux](https://github.com/microverseinc/linters-config/tree/master/react-redux)
 - [ror](https://github.com/microverseinc/linters-config/tree/master/ror)
