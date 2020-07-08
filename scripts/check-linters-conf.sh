@@ -8,7 +8,7 @@ Usage: check-linters-config dir
 Please provide a valid dir to compare againts.
 
 Valid options for dir:
-  css
+  html-css
   javascript
   react-redux
   ror
@@ -39,14 +39,17 @@ compare () {
 }
 
 case $1 in
-  css)
-  config_files=(".stickler.yml" "stylelint.config.js")
+  html-css)
+  config_files=(".hintrc" ".stylelintrc.json")
   ;;
-  ruby | ror)
-  config_files=(".stickler.yml" ".rubocop.yml")
+  ruby)
+  config_files=(".rubocop.yml")
+  ;;
+  ror)
+  config_files=(".stylelintrc.json" ".rubocop.yml")
   ;;
   javascript | react-redux)
-  config_files=(".stickler.yml" ".eslintrc.json")
+  config_files=(".stylelintrc.json" ".eslintrc.json")
   ;;
   *)
   echo "$usage"
