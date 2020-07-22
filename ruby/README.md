@@ -55,3 +55,11 @@ Click on the `Details` link of the test action to check the results of your test
 6. Fix linter errors.
 7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
+## Troubleshooting
+
+- While using Colorize gem, if you are facing errors with Rspec related to 
+    ```bash
+    LoadError:
+    cannot load such file -- colorize
+    ```
+    please remove ```--deployment``` from line no. [26](https://github.com/shubham14p3/Ruby-capstone-project/blob/ca86784cc88bea7c933e329c0953f07e21bcf6ca/.github/workflows/tests.yml#L16) of test.yml file.
