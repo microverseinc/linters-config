@@ -57,7 +57,7 @@ The problem is that you may be using a credentials app like [Credential Manager 
 
 If you had a different problem related to a specific tool, please check detailed instructions for each linter:
 
-- [css](./css#troubleshooting)
+- [html&css](./html-css#troubleshooting)
 - [ruby](./ruby#troubleshooting)
 - [ror](./ror#troubleshooting)
 - [javascript](./javascript#troubleshooting)
