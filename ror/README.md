@@ -1,7 +1,6 @@
 # Ruby on Rails Course
 
-This is the **GitHub Actions configuration**. If you are looking for the **Stickler configuration**, you can find it [here](https://github.com/microverseinc/linters-config/tree/Stickler/ror).
-
+## GitHub Actions configuration
 
 If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
 
