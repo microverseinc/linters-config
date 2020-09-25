@@ -1,7 +1,5 @@
 # Ruby Course
 
-## GitHub Actions configuration
-
 If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
 
 ## Set-up Rubocop GitHub Action

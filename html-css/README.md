@@ -1,7 +1,5 @@
 # HTML & CSS3 Course
 
-## GitHub Actions configuration
-
 If you are not familiar with linters, read [root level README](../README.md).
 
 ## Set-up GitHub Actions
