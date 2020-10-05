@@ -25,6 +25,15 @@ $ check-linters-config ruby
 Files master/ruby/.rubocop.yml and .rubocop.yml are identical
 ```
 
+If you notice differ in your terminal as the following 
+
+
+```
+$ check-linters-config ruby
+Files master/ruby/.rubocop.yml and .rubocop.yml differ
+```
+please do not forget to check the contents in the specific linter config files.
+
 The possible directories/options included are:
 
 - [html-css](https://github.com/microverseinc/linters-config/tree/master/html-css)
