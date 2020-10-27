@@ -38,7 +38,7 @@ Also, there are many ways you can integrate a linter in your workflow:
 
 [Github Actions](https://help.github.com/en/actions) is a [CI/CD](https://codilime.com/what-is-ci-cd-all-you-need-to-know/) service offered by GitHub. It allows you to automate your workflow by letting GitHub take care of a number of tasks which can be triggered by [different of events](https://help.github.com/en/actions/reference/events-that-trigger-workflows) on the platform.
 
-🐛 **What to do if GitHub Actions does not work?** Check [Troubleshooting](./#troubleshooting) below.
+🐛 **What to do if GitHub Actions does not work?** Check [Troubleshooting](#troubleshooting) below.
 
 You can automate tasks by creating **workflows** in your GitHub repository. GitHub will look for [YAML](https://en.wikipedia.org/wiki/YAML) files inside of the `.github/workflows` directory.
 
