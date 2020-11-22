@@ -13,6 +13,7 @@ jobs:
           ruby-version: 2.6.x
       - name: Setup RSpec
         run: |
+          gem install bundler
           [ -f Gemfile ] && bundle --deployment
           gem install --no-document rspec:'~>3.0'
       - name: RSpec Report
