@@ -4,6 +4,7 @@
     "es6": true,
     "jest": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -15,8 +16,13 @@
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "arrow-parens": ["error", "as-needed"]
-  }
+  },
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }

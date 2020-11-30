@@ -1,62 +1,65 @@
 # React and Redux
 
-If you are not familiar with linters and Stickler, read [root level README](../README.md).
+If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+
+## Set-up GitHub Actions
+
+This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+
+[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+
+[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
 
 Please do the following **steps in this order**:
 
-### Set-up Stickler (Github app) - it will show that your app is free from style errors
-1. Install stickler-ci https://github.com/apps/stickler-ci
-2. Enable stickler in your repo. You can do it [here](https://stickler-ci.com/).
-3. In first commit of your feature branch add a copy of [.stickler.yml](./.stickler.yml) and [.eslintrc.json](./.eslintrc.json)  to the root directory.
-   - **Remember** to use both files linked above
-   - **Remember** that `.stickler.yml` file name starts with a dot.
-4. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
+    - **Remember** to use the file linked above
+    - **Remember** that `.github` folder starts with a dot.
+2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. When you open your first pull request you should see Stickler's report at `Checks` tab.
+3. When you open your first pull request you should see the result of the GitHub Actions:
 
-### Set-up ESlint in your local env - it will help you to find style errors
-1. Run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
-2. Run `npx eslint --init`.
-3. Make sure you select the following options when prompted.
+![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
 
-    `? How would you like to use ESLint?` To check syntax, find problems, and enforce code style
+Click on the `Details` link to see the full output and the errors that need to be fixed:
 
-    `? What type of modules does your project use?` JavaScript modules (import/export)
+![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
 
-    `? Which framework does your project use?`  React
+## Set-up linters in your local env
 
-    `? Does your project use Typescript`  No
+### ESLint
 
-    `? Where does your code run?`     Browser
-
-    `? How would you like to define a style for your project?` Use a popular style guide
-
-    `? Which style guide do you want to follow?`      Airbnb
-
-    `? What format do you want your config file to be in?`       JSON
-
-    `The config that you've selected requires the following dependencies: ? Would you like to install them now with npm?`       Yes
-
-4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
-5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+1. Run `npm install --save-dev eslint@6.8.x eslint-config-airbnb@18.1.x eslint-plugin-import@2.20.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@2.5.x babel-eslint@10.1.x` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+2. Copy [.eslintrc.json](./.eslintrc.json) to the root directory of your project.
+3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-6. Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
-7. Run `npx eslint .`.
-8. Fix linter errors.
-9. **IMPORTANT NOTE**: feel free to research [auto-correct options for ESlint](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+4. Run `npx eslint .` on the root of your directory of your project.
+5. Fix linter errors.
+6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
-## Troubleshooting
+### Stylelint
 
-1. All config files are in my repo but Stickler does not work.
+1. Run
 
-   - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
+   ```
+   npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+   ```
 
-   ![screenshot](../assets/images/stickler_app_config.png)
+   (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
 
-   - Try to add a new commit to your Pull Request. Stickler should detect changes in your repo and start checking your code.
+2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
+3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
+   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
+4. Run
+   ```
+   npx stylelint "**/*.{css,scss}"
+   ```
+   on the root of your directory of your project.
+5. Fix linter errors.
+6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
-2. `while scanning for the next token found character '\t' that cannot start any token` error.
-   - Please make sure that you used spaces not tabs for indentation.
-3. Check if someone else has had similar problem before [here](https://questions.microverse.org/c/linters-stickler).
-   Please make sure that you used spaces not tabs for indentation.
-4. Stickler does not work and nothing helps 💥 - run eslint in your local env and correct all errors. **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
+## Test/Deployment Actions
+
+Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+
+Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
