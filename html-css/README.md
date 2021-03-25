@@ -49,7 +49,7 @@ A customizable linting tool that helps you improve your site's accessibility, sp
 
 1. Run
    ```
-   npm install --save-dev hint@6.0.x
+   npm install --save-dev hint@6.x
    ```
    (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
 2. Copy [.hintrc](.hintrc) to the root directory of your project.
@@ -68,7 +68,7 @@ A mighty, modern linter that helps you avoid errors and enforce conventions in y
 1. Run
 
    ```
-   npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
    ```
 
    (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
