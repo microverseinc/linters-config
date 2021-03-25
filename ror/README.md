@@ -36,7 +36,7 @@ node_modules/
 
 ### Rubocop
 
-1. Add `gem 'rubocop', '~>0.81.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
+1. Add `gem 'rubocop', '>= 1.0, < 2.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
 2. Run `bundle install`.
 3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
 4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
@@ -50,7 +50,7 @@ node_modules/
 1. Run
 
    ```
-   npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
    ```
 
    (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
