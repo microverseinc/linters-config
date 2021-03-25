@@ -29,7 +29,7 @@ Click on the `Details` link to see the full output and the errors that need to b
 
 ### ESLint
 
-1. Run `npm install --save-dev eslint@7.11.x eslint-config-airbnb@18.2.x eslint-plugin-import@2.22.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@4.1.x babel-eslint@10.1.x` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+1. Run `npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
 2. Copy [.eslintrc.json](./.eslintrc.json) to the root directory of your project.
 3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
     - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
@@ -42,7 +42,7 @@ Click on the `Details` link to see the full output and the errors that need to b
 1. Run
 
    ```
-   npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
    ```
 
    (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
