@@ -13,7 +13,8 @@
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
-    "eol-last": "off"
+    "eol-last": "off",
+    "no-unused-vars": "off"
   },
   "ignorePatterns": [
     "dist/",
