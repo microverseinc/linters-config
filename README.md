@@ -5,6 +5,7 @@
 Each directory listed below contains config files specific to one programming language and README file with detailed instructions:
 
 - [html&css](./html-css)
+- [html&css + javascript](./html-css-js) (for projects that require you to use both JavaScript and HTML & CSS)
 - [ruby](./ruby)
 - [ror](./ror)
 - [javascript](./javascript)
