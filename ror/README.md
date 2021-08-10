@@ -36,7 +36,11 @@ node_modules/
 
 ### Rubocop
 
-1. Add `gem 'rubocop', '>= 1.0', '< 2.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
+1. Add this line to the `Gemfile`
+    ```
+    gem 'rubocop', '>= 1.0', '< 2.0'
+    ```
+    *not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)*.
 2. Run `bundle install`.
 3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
 4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
@@ -53,16 +57,12 @@ node_modules/
    npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
    ```
 
-   (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
 
 2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
 3. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run
-   ```
-   npx stylelint "**/*.{css,scss}"
-   ```
-   on the root of your directory of your project.
+4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
 5. Fix linter errors.
 6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
