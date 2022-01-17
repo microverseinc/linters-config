@@ -12,6 +12,11 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "overrides": [
+    {
+      "files": ["*.jsx", "*.js"]
+    }
+  ],
   "extends": ["airbnb", "plugin:react/recommended"],
   "plugins": ["react"],
   "rules": {
