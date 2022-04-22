@@ -52,7 +52,7 @@ Depending on the configuration of your GitHub credentials, you may have an error
 
 ```
 
-The problem is that you may be using a credentials app like [Credential Manager in Windows](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451) or OSX Keychain. In that case, you should [setup a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and configure it in your credentials app. Make sure to check the `workflow` permissions whne you setup your personal access token.
+The problem is that you may be using a credentials app like [Credential Manager in Windows](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451) or OSX Keychain. In that case, you should [setup a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and configure it in your credentials app. Make sure to check the `workflow` permissions when you setup your personal access token.
 
 If you had a different problem related to a specific tool, please check detailed instructions for each linter:
 
