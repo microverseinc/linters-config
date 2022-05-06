@@ -41,4 +41,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check node_modules existence
         run: |
-          if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo "You can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+          if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;31mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
