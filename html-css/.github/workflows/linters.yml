@@ -54,3 +54,16 @@ jobs:
       - name: Check node_modules existence
         run: |
           if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;32mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+
+  lint:
+  
+    run-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Super-Linter
+        uses: github/super-linter@v4.9.2
+        env:
+            GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
+  
