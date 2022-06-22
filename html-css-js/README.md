@@ -54,7 +54,7 @@ A customizable linting tool that helps you improve your site's accessibility, sp
 
 1. Run
    ```
-   npm install --save-dev hint@6.x
+   npm install --save-dev hint@7.x
    ```
    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
 2. Copy [.hintrc](.hintrc) to the root directory of your project.
