@@ -38,7 +38,7 @@ node_modules/
 
 1. Run 
     ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+    npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
     ```
     *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
 2. Copy [.eslintrc.json](./.eslintrc.json) to the root directory of your project.
