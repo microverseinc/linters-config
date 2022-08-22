@@ -5,13 +5,13 @@ on: pull_request
 jobs:
   rubocop:
     name: Rubocop
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
-          ruby-version: ">=3.0.x"
+          ruby-version: ">=3.1.x"
       - name: Setup Rubocop
         run: |
           gem install --no-document rubocop -v '>= 1.0, < 2.0' # https://docs.rubocop.org/en/stable/installation/

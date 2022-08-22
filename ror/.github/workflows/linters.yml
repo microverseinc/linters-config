@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
-          ruby-version: 3.0.x
+          ruby-version: 3.1.x
       - name: Setup Rubocop
         run: |
           gem install --no-document rubocop -v '>= 1.0, < 2.0' # https://docs.rubocop.org/en/stable/installation/
