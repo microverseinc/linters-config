@@ -16,7 +16,8 @@
     "eol-last": "off",
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
-    }]
+    }],
+    "linebreak-style":0
   },
   "ignorePatterns": [
     "dist/",
