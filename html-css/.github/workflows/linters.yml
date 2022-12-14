@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "16.x"
       - name: Setup Lighthouse
         run: npm install -g @lhci/cli@0.7.x
       - name: Lighthouse Report
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "16.x"
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@7.x
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "16.x"
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
