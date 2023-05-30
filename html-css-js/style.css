@@ -1,0 +1,10 @@
+.heading {
+  color: #f00;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
